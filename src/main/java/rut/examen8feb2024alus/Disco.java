@@ -70,8 +70,6 @@ public class Disco {
     }
     
     // 0,3
-    
-    
 
     public String getName() {
         return name;
@@ -135,6 +133,7 @@ public class Disco {
                 t = TypeMusic.valueOf(s.toUpperCase());
             }
         } catch (IllegalArgumentException ex){
+
         }
         return t;
     }
