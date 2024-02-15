@@ -125,7 +125,7 @@ public class Disco {
     
     // 6._Ordenar por rating+nombre
     public void sortSongsRatingName(){
-        Arrays.sort(songs,Collections.reverseOrder(new SongsByRatingName()));
+        Arrays.sort(songs,Collections.reverseOrder(new RatingCompare()));
     }
    
     private static TypeMusic typeParser(String s){
