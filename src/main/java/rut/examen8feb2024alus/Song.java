@@ -69,10 +69,10 @@ public class Song implements Comparable<Song>{
     }
 
 
-//ESTUDIAR COMPARABLE
+//ESTO LO HA IMPLEMENTADO EL COMPARABLE
     @Override
-    public int compareTo(Song comparar) {
-        return this.getName().compareTo(comparar.getName());
+    public int compareTo(Song o) {
+        return this.name.compareToIgnoreCase(o.name);
     }
 }
 // int dev = cancion1.compareTo(cancion2) **Devuelve 1 si cancion1 es mayor, devuelve 0 si es igual, y -1 si es menor**

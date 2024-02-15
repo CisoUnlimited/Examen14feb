@@ -44,9 +44,7 @@ public class Examen8Feb2024 {
         System.out.println("SONGS SORTED BY NAME DESC");
 
         alive.sortSongsDesc();
-        System.out.println(alive.toString());
-        
-        System.out.println(alive);  
+        System.out.println(alive);
 
 
         // 5._Ordenamos las canciones por duration de forma ascendente
@@ -55,18 +53,18 @@ public class Examen8Feb2024 {
             System.out.println("SONGS SORTED BY DURATION ASC");
 
             alive.sortSongsDuration();
-            System.out.println(alive.toString());
+            System.out.println(alive);
         
             // Como human.sortSongsDuration no me va a funcionar porque
             // tiene un null, ordeno el disco alive
             System.out.println("HAY CANCIONES NULAS!!");
-            
+
             System.out.println(alive);
         
         
          //6._Ordenamos las canciones por rating + name --> 2
         System.out.println("SONGS SORTED BY RATING + NAME DESC/ASC");
-       
+       alive.sortSongsRatingName();
         
         System.out.println(alive);  
 

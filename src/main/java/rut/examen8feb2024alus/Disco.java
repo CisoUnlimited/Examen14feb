@@ -115,15 +115,18 @@ public class Disco {
     
     // 4._Ordenar canciones por el nombre de forma desc
     public void sortSongsDesc(){
-        Arrays.sort(this.songs,Collections.reverseOrder());
+        Arrays.sort(songs,Collections.reverseOrder());
     }
     
     // 5._Ordenar canciones por la duración
     public void sortSongsDuration(){
-        Arrays.sort(this.songs,new DurationCompare());
+        Arrays.sort(songs,new DurationCompare());
     }
     
     // 6._Ordenar por rating+nombre
+    public void sortSongsRatingName(){
+        Arrays.sort(songs,Collections.reverseOrder(new SongsByRatingName()));
+    }
    
     private static TypeMusic typeParser(String s){
         TypeMusic t = TypeMusic.VARIOUS;
